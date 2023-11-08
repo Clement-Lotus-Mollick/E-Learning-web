@@ -37,7 +37,29 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn bg-[#29A354] text-white">Button</a>
+              <!-- <a class="btn bg-[#29A354] text-white">Log in</a> -->
+              <!-- Open the modal using ID.showModal() method -->
+<button class="btn btn bg-[#29A354] text-white" onclick="my_modal_1.showModal()">Log in</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h2 style="margin-bottom: 20px;">Login</h2>
+
+    <form action="login.php" method="post">
+        <div style="margin-bottom: 10px;">
+            <label for="username" style="display: block; text-align: left;">Username:</label>
+            <input type="text" id="username" name="username" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px;">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <label for="password" style="display: block; text-align: left;">Password:</label>
+            <input type="password" id="password" name="password" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px;">
+        </div>
+        <div>
+            <input type="submit" value="Login" style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer;">
+        </div>
+    </form>
+    </div>
+  </div>
+</dialog>
             </div>
           </div>
     </nav>
@@ -119,7 +141,7 @@
                   <h2 class="card-title">Tailwind CSS</h2>
                   <p>Learn Tailwind for beginner</p>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary text-white bg-[#29A354]"><a href="">Learn</a></button>
+                    <button class="btn btn-primary text-white bg-[#29A354]"><a href="learntailw.html">Learn</a></button>
                   </div>
                 </div>
               </div>
@@ -129,7 +151,19 @@
                   <h2 class="card-title">Daisy ui</h2>
                   <p>Learn Daisy ui for beginner</p>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary text-white bg-[#29A354]"><a href="">Learn</a></button>
+                    <!-- <button class="btn btn-primary text-white bg-[#29A354]"><a href="">Learn</a></button> -->
+                    <!-- The button to open modal -->
+<a href="#my_modal_8" class="btn btn-primary text-white bg-[#29A354]">Learn</a>
+<!-- Put this part before </body> tag -->
+<div class="modal" id="my_modal_8">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4"><a href="https://daisyui.com/components/hero/" class="text-red-500">Click to explore</a></p>
+    <div class="modal-action">
+     <a href="#" class="btn">Yay!</a>
+    </div>
+  </div>
+</div>
                   </div>
                 </div>
               </div>
@@ -139,7 +173,7 @@
                   <h2 class="card-title">MySql</h2>
                   <p>Learn  Structured Query Language for beginner</p>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary text-white bg-[#29A354]"><a href="">Learn</a></button>
+                    <button class="btn btn-primary text-white bg-[#29A354]"><a href="learnsql.html">Learn</a></button>
                   </div>
                 </div>
               </div>
